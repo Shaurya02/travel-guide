@@ -1,4 +1,5 @@
-const apiKey='pk.eyJ1IjoidHNqMjAwMiIsImEiOiJja3MxbDN3Z3QweWdyMnZwamV1aG1wOXZnIn0.VXevg6JOSXIUj5E6KbDXYQ'
+require('dotenv').config();
+const apiKey=process.env.APIKEY;
 
 const mymap = L.map('map').setView([10.899915, 73.154658], 9.4);
 
